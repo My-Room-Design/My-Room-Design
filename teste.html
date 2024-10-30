@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - My Room Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         /* Estilos gerais */
         .projects-header {
@@ -15,12 +16,14 @@
         }
 
         .projects-header h2 {
-            margin-right: 10px;
+            margin-right: 25px;
+            font-size: large;
+            font-weight: 300;
         }
 
         .projects-header .line {
             flex-grow: 1;
-            height: 2px;
+            height: 1px;
             background-color: #333;
         }
 
@@ -100,7 +103,6 @@
             display: inline-block;
         }
 
-        /* Botão lateral */
         .side-button {
             writing-mode: vertical-rl;
             transform: rotate(180deg);
@@ -114,11 +116,22 @@
             text-transform: uppercase;
             font-weight: bold;
         }
-    </style>
-</head>
 
-<body>
-    <div class="container-fluid my-5">
+        @media (max-width: 575.98px) {
+
+            /* Menor que 'sm' */
+            .side-button {
+                writing-mode: horizontal-tb;
+                transform: none;
+                position: static;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <div class="container-fluid container-xxl my-5">
         <!-- Header de Projetos -->
         <div class="projects-header">
             <h2>Projetos</h2>
@@ -127,7 +140,7 @@
 
         <div class="row position-relative">
             <!-- Card 1 -->
-            <div class="col mb-4">
+            <div class="col-12 col-lg col-sm-6 mb-4">
                 <div class="card project-card">
                     <div class="project-image">
                         <div class="tags">
@@ -144,18 +157,18 @@
                                 em maio em uma das casas mais icônicas de Criciúma, o Ventuno Pub em Santa Catarina.</p>
                         </div>
                         <div class="arrow-container">
-                            <span class="arrow">&#8594;</span>
+                            <i class="bi bi-arrow-up-right" style="font-size: 1.6em;"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="col mb-4">
+            <div class="col-12 col-lg col-sm-6 mb-4">
                 <div class="card project-card">
                     <div class="project-image">
                         <div class="tags">
-                            <span class="tag">Full Visual</span>
+                            <span class="tag"><i class="bi bi-stars"></i>Full Visual</span>
                         </div>
                     </div>
                     <div style="display: flex;">
@@ -168,14 +181,14 @@
                                 lanchonetes americanas em alta globalmente.</p>
                         </div>
                         <div class="arrow-container">
-                            <span class="arrow">&#8594;</span>
+                            <i class="bi bi-arrow-up-right" style="font-size: 1.6em;"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="col mb-4">
+            <div class="col-12 col-lg col-sm-6 mb-4">
                 <div class="card project-card">
                     <div class="project-image">
                         <div class="tags">
@@ -193,21 +206,19 @@
                                 para a equipe de League of Legends.</p>
                         </div>
                         <div class="arrow-container">
-                            <span class="arrow">&#8594;</span>
+                            <i class="bi bi-arrow-up-right" style="font-size: 1.6em;"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-auto mx-2">
+            <div class="col col-sm-auto mx-2">
                 <!-- Botão Lateral -->
                 <div class="side-button">
                     TODOS PROJETOS
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

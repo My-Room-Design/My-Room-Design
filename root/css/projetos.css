@@ -1,0 +1,122 @@
+
+            /* Estilos gerais */
+            .projects-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+
+            .projects-header h2 {
+                margin-right: 25px;
+                font-size: 20pt;
+                font-weight: 300;
+            }
+
+            .projects-header .line {
+                flex-grow: 1;
+                height: 1px;
+                background-color: #333;
+            }
+
+            .project-card {
+                border: none;
+                position: relative;
+                height: 100%;
+                background-color: white;
+            }
+
+            .project-image {
+                background-color: #e0e0e0;
+                height: 250px;
+                width: 100%;
+                position: relative;
+            }
+
+            .project-card .tag {
+                background-color: black;
+                color: white;
+                border: 1px solid white;
+                font-size: 0.8rem;
+                padding: 3px 8px;
+                border-radius: 12px;
+                margin-right: 5px;
+                display: inline-block;
+            }
+
+            .project-card .tags {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            .project-card-footer {
+                background-color: white;
+                padding: 15px;
+                width: 90%;
+                margin-top: -20px;
+                position: relative;
+                font-size: 0.9rem;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .project-card-footer .title {
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+
+            .project-card-footer .category {
+                color: #666;
+                font-size: 0.85rem;
+            }
+
+            .project-card-footer .year {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 0.85rem;
+                color: #666;
+            }
+
+            .arrow-container {
+                width: 10%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                position: relative;
+                padding-top: 20px;
+                /* Ajuste o valor conforme necessário para o alinhamento vertical */
+            }
+
+            .arrow {
+                font-size: 1.5rem;
+                color: black;
+                display: inline-block;
+            }
+
+            .side-button {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                position: absolute;
+                right: 0;
+                background-color: black;
+                height: 250px;
+                color: white;
+                padding: 10px 10px;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            @media (max-width: 575.98px) {
+
+                /* Menor que 'sm' */
+                .side-button {
+                    writing-mode: horizontal-tb;
+                    transform: none;
+                    position: static;
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                }
+            }
