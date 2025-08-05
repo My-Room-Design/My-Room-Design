@@ -43,7 +43,9 @@
                         <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                     </ul>
                     <!-- Botão alinhado à direita -->
-                    <a href="#" class="btn btn-custom mt-5 mt-lg-0">Solução agora</a>
+                     <div class="position-relative mt-5 mt-lg-0">
+                         <a href="#" class="btn btn-custom px-4">Solução agora</a>
+                     </div>
                 </div>
             </div>
         </nav>
@@ -52,7 +54,7 @@
     <main>
         <!-- Slogan -->
         <div class="container text-center">
-            <h3 class="citacao py-5 m-0">"Transformamos ideias em novas visões ao mundo"</h3>
+            <h3 class="citacao pt-5 m-0">"Transformamos ideias em novas visões ao mundo"</h3>
         </div>
 
         <div class="container-fluid container-xxl my-5">
@@ -64,10 +66,18 @@
 
             <div class="row position-relative">
                 <!-- Card 1 -->
+
+                <!-- <picture>
+                            <source srcset="https://picsum.photos/600/400?random=1" type="image/svg+xml" />
+                            <img src="https://picsum.photos/600/400?random=1" class="img-fluid" alt="image desc"
+                            />
+                         </picture> -->
+
                 <div class="col-12 col-lg col-sm-6 mb-4">
                     <div class="card project-card">
                         <div class="project-image"
-                            style="background-image: url('https://picsum.photos/600/400?random=1');">
+                            
+                            style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/b7f4df171045365.6467e84f678dd.png'); background-position: 0 -40px; background-size: cover;">
                             <div class="tags">
                                 <span class="tag">Motion Banner</span>
                                 <span class="tag">Identidade Visual</span>
@@ -78,7 +88,7 @@
                                 <div class="title">Yunk Vino</div>
                                 <div class="category">Artista</div>
                                 <div class="year">2024</div>
-                                <p>Veja um pouco do nosso trabalho desenvolvido para o evento "Trap de fato" que
+                                <p class="mt-2">Veja um pouco do nosso trabalho desenvolvido para o evento "Trap de fato" que
                                     aconteceu
                                     em maio em uma das casas mais icônicas de Criciúma, o Ventuno Pub em Santa Catarina.
                                 </p>
@@ -94,7 +104,7 @@
                 <div class="col-12 col-lg col-sm-6 mb-4">
                     <div class="card project-card">
                         <div class="project-image"
-                            style="background-image: url('https://picsum.photos/600/400?random=2');">
+                            style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/9440ab206891775.66d47a5f2fa3a.png'); background-position: center; background-size: 180%;">
                             <div class="tags">
                                 <span class="tag"><i class="bi bi-stars"></i>Full Visual</span>
                             </div>
@@ -104,7 +114,7 @@
                                 <div class="title">UNIKA HAMBURGUERIA</div>
                                 <div class="category">Empresa</div>
                                 <div class="year">2024</div>
-                                <p>A Únika Hamburgueria combina estilo e personalidade, comprometida em oferecer
+                                <p class="mt-2">A Únika Hamburgueria combina estilo e personalidade, comprometida em oferecer
                                     experiências únicas. Sua identidade visual se inspira no retrô minimalista, comum em
                                     lanchonetes americanas em alta globalmente.</p>
                             </div>
@@ -119,7 +129,7 @@
                 <div class="col-12 col-lg col-sm-6 mb-4">
                     <div class="card project-card">
                         <div class="project-image"
-                            style="background-image: url('https://picsum.photos/600/400?random=3');">
+                            style="background-image: url('https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/639614205837711.Y3JvcCw4MDgsNjMyLDAsMA.png'); background-size: cover;">
                             <div class="tags">
                                 <span class="tag">Concept Art</span>
                                 <span class="tag">Motion Flyer</span>
@@ -130,7 +140,7 @@
                                 <div class="title">LOUD Samurai Legends</div>
                                 <div class="category">Time</div>
                                 <div class="year">2024</div>
-                                <p>"Samurai Legends" é um projeto de estudo criado para a Loud, com foco em um tema
+                                <p class="mt-2">"Samurai Legends" é um projeto de estudo criado para a Loud, com foco em um tema
                                     oriental com renderizações em 3D e fotos de jogadores. Esse projeto foi criado
                                     especificamente para a equipe de League of Legends.</p>
                             </div>
@@ -148,17 +158,17 @@
             </div>
         </div>
 
-        <div class="container-fluid container-xxl my-5">
+        <div class="container-fluid container-xxl my-5 pt-sm-0 pt-5 ">
             <div class="instagram-header text-center">
                 <img src="./images/instagram.svg" class="me-4" alt="">
                 <div class="line"></div>
                 <div class="row">
                     <div class="col text-end">
-                        <i class="bi bi-heart notification-icon position-relative" style="font-size: 1.6em;"
+                        <i class="bi bi-heart notification-icon position-relative" style="font-size: 1.6em;" role="img"
                             aria-label="Notificações de Curtidas">
                             <span class="badge bg-danger d-none" id="like-badge"> </span>
                         </i>
-                        <i class="bi bi-chat notification-icon position-relative ms-3" style="font-size: 1.6em;"
+                        <i class="bi bi-chat notification-icon position-relative ms-3" style="font-size: 1.6em;" role="img"
                             aria-label="Notificações de Mensagens">
                             <span class="badge bg-danger d-none" id="direct-badge"> </span>
                         </i>
@@ -178,8 +188,8 @@
                 </div>
             </div>
 
-            <div class="row position-relative">
-                <div class="col-md-6">
+            <div class="row position-relative g-3">
+                <div class="col-12 col-lg-6">
                     <div class="storie-section">
                         <div class="row">
                             <div class="col-md-4">
@@ -195,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="post-section">
                         <div class="row">
                             <div class="col-md-4">
@@ -207,6 +217,7 @@
                                 <p>Na My Room, seus conteúdos não são só bonitos, mas que realmente trazem resultados.
                                     Vamos juntos aumentar sua visibilidade e engajar seu público de forma inteligente!
                                 </p>
+                                <button class="btn btn-dark">Quero stories personalizados!</button>
                             </div>
                         </div>
                     </div>
@@ -244,10 +255,34 @@
         .btn-custom {
             background-color: #000;
             color: #fff;
-            font-weight: bold;
+            font-weight: lighter;
             border-radius: 0;
         }
 
+        .btn-custom:hover{
+            border: 1px solid black;
+            font-weight:500;
+        }
+
+        .btn-custom::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+        }
+        .btn-custom::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+        }
+        
         .instagram-storie,
         .instagram-post {
             background-color: #fff;
@@ -276,15 +311,7 @@
             margin-right: 10px;
         }
 
-        .btn-custom::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-            background-color: white;
-        }
+
 
         /* Centralização do texto */
         .navbar-nav {
